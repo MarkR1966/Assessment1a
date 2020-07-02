@@ -190,7 +190,18 @@ def five(input):
 
 
 def six(input):
-    return False
+	l_input = input.lower()
+	c_ie = l_input.count("ie")
+	c_ei = l_input.count("ei")
+	if c_ie != 0:
+		a = l_input.find("ie") - 1
+		if l_input[a] != 'c':
+			return True
+	if c_ei != 0:
+		a = l_input.find("ei") - 1
+		if l_input[a] == 'c':
+			return True
+	return False
 
 	# <QUESTION 7>
 

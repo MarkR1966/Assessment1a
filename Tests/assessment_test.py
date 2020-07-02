@@ -36,13 +36,13 @@ def test_four():
 #    assert python1.five("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445") == ["Bert","Jeff"]
 #    assert python1.five("Bert,files.py,True,1447,Bert,tests.py,True,1318,Jeff,app.py,True,1445") == []
 #
-#def test_six():
-#    assert python1.six("ceiling") == True
-#    assert python1.six("believe") == True
-#    assert python1.six("glacier") == False
-#    assert python1.six("height") == False
-#    assert python1.six("receive") == True
-#
+def test_six():
+    assert python1.six("ceiling") == True
+    assert python1.six("believe") == True
+    assert python1.six("glacier") == False
+    assert python1.six("height") == False
+    assert python1.six("receive") == True
+
 #def test_seven():
 #    assert python1.seven("Hello") == 2
 #    assert python1.seven("hEelLoooO") == 6
