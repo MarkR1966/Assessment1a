@@ -218,7 +218,13 @@ def six(input):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    return 0
+	l_input = input.lower()
+	vowels = "aeiou"
+	count = 0
+	for v in vowels:
+		num = l_input.count(v)
+		count += num
+	return count
 
 	# <QUESTION 8>
 
@@ -236,7 +242,10 @@ def seven(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-	return 1
+	total = 1
+	for i in range(1, input+1):
+		total *= i
+	return total
 
 	# <QUESTION 9>
 
@@ -257,7 +266,11 @@ def eight(input):
 	# Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-	return -1
+	s_input = inputString.replace(" ", "")
+	loc = s_input.find(char) + 1
+	if loc == 0:
+		loc = -1
+	return loc
 
 	# <QUESTION 10>
 
@@ -277,4 +290,10 @@ def nine(inputString, char):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def ten(string, int, char):
-	return False
+	s_string = string.replace(" ", "").lower()
+	if int > len(s_string):
+		return False
+	if s_string[int-1] == char:
+		return True
+	else:
+		return False
