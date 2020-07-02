@@ -132,7 +132,16 @@ def three(arg1):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-	return 0
+	li = list(arg1.split(" "))
+	max = 0
+	for i in li:
+		c = i
+		a = 0
+		for v in c:
+			a += int(v)
+		if a > max:
+			max = a
+	return max
 
 	# <QUESTION 5>
 
