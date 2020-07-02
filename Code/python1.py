@@ -99,7 +99,14 @@ def two(input):
 	# No Hints for this question
 
 def three(arg1):
-	return "null"
+	if arg1 % 15 == 0:
+		return "fizzbuzz"
+	elif arg1 % 5 == 0:
+		return "buzz"
+	elif arg1 % 3 == 0:
+		return "fizz"
+	else:
+		return "null"
 
 
 	# <QUESTION 4>
